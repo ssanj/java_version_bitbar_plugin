@@ -6,20 +6,14 @@
 # <bitbar.author.github>ssanj</bitbar.author.github>
 # <bitbar.desc>Displays the current version of Java installed and a clickable list of the latest versions available.</bitbar.desc>
 # <bitbar.image>https://raw.githubusercontent.com/ssanj/java_version_bitbar_plugin/master/image.png</bitbar.image>
-# <bitbar.dependencies>python, java</bitbar.dependencies>
+# <bitbar.dependencies>python2, java</bitbar.dependencies>
 # <bitbar.abouturl>https://github.com/ssanj/java_version_bitbar_plugin</bitbar.abouturl>
 
 import subprocess
 import re
 import json
 import logging
-
-try:
-    # For Python 3.0 and later
-    from urllib.request import urlopen
-except ImportError:
-    # Fall back to Python 2's urllib2
-    from urllib2 import urlopen
+from urllib2 import urlopen
 
 FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 logging.basicConfig(format=FORMAT)
