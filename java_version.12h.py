@@ -8,7 +8,14 @@
 # <bitbar.image>https://raw.githubusercontent.com/ssanj/java_version_bitbar_plugin/master/image.png</bitbar.image>
 # <bitbar.dependencies>python2, java</bitbar.dependencies>
 # <bitbar.abouturl>https://github.com/ssanj/java_version_bitbar_plugin</bitbar.abouturl>
-
+#
+# Java must be installed in your OS. Running java -version in a terminal must return the installed version of Java.
+# This plugin currently only works with Python2.
+# Displays the current Java version installed on your system and a list of newer versions (if any). If you have
+# the latest version, it will be displayed in green on the task bar. If there are newer versions available your
+# Java version will be displayed in orange and will have a list of newer versions within the context menu. Clicking on
+# these menu items will take you to a download page on the java.dashversion.com site which will direct you to the Oracle
+# download page for the latest version.
 import subprocess
 import re
 import json
